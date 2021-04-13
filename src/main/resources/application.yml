@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: key-storage
+  datasource:
+    url: jdbc:postgresql://localhost:5432/key_storage
+    username: local
+    password: local
+    driverClassName: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connection-test-query: select 1
+      maximum-pool-size: 10
+  liquibase:
+    change-log: classpath:liquibase/changelog.yml
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  jackson:
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: false
+
+management:
+  endpoints:
+    web:
+      base-path: /management
