@@ -1,7 +1,6 @@
 package com.antonov.keystorage.rest.controller;
 
 import com.antonov.keystorage.persistence.entity.CompositeKeyEntity;
-import com.antonov.keystorage.rest.dto.CompositeKeyDTO;
 import com.antonov.keystorage.rest.dto.CompositeKeyRequestDTO;
 import com.antonov.keystorage.service.CompositeKeyService;
 import io.swagger.annotations.ApiOperation;

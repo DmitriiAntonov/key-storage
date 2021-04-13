@@ -22,6 +22,6 @@ CREATE TABLE field
     value VARCHAR NOT NULL,
     composite_key_id BIGINT NOT NULL,
     CONSTRAINT pk_field PRIMARY KEY (id),
-    CONSTRAINT idx_key_name UNIQUE (key, name)
+    CONSTRAINT idx_composite_key_id_key_name UNIQUE (composite_key_id, key, name)
 );
 
